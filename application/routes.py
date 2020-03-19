@@ -1,9 +1,7 @@
-# import render_template function from the flask module
-from flask import render_template
-# import the app object from the ./application/__init__.py
-from application import app
-# define routes for / & /home, this function will be called when these are accessed
+from flask import render_template, redirect, url_for
+from application import app, db
 from application.models import Food
+from application.forms import FoodForm
 
 @app.route('/')
 @app.route('/home')
@@ -11,6 +9,24 @@ def home():
     foodData = Food.query.first()
     return render_template('home.html', title='Home', food=foodData)
 
-@app.route('/about')
-def about():
- return render_template('about.html', title='about')
+@app.route('/recipes')
+def recipes():
+ return render_template('recipes.html', title='recipes')
+
+@app.route('/fridge', methods=['GET', 'POST'])
+def fridge():
+    form = FoodForm()
+    if form.validate_on_submit():
+        foodData = Food(
+            name = form.food_name.data,
+        )
+
+        db.session.add(foodData)
+        db.session.commit()
+
+        return redirect(url_for('home'))
+
+    else:
+        print(form.errors)
+
+    return render_template('fridge.html', title='Fridge', form=form)

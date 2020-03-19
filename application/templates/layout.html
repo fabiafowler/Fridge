@@ -1,10 +1,9 @@
 <html>
 <head>
 <a href="{{ url_for('home') }}">Home Page</a>
-<a href="{{ url_for('about') }}">About Page</a>
+<a href="{{ url_for('recipes') }}">Recipe Page</a>
+<a href="{{ url_for('fridge') }}">Fridge Page</a>
 
-<title>{{ title }} - Page</title>
-</head>
 <body>
 <h1>{{  title  }} Page</h1>
 {% block body_content %}{% endblock %}

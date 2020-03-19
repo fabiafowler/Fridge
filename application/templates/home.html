@@ -1,8 +1,22 @@
 {% extends "layout.html" %}
 {% block body_content %}
-    <h1>Home Page</h1>
-    <p>Welcome to this web app!</p>
-        <div>
-            <h3>{{ food.name }}</h3>
-        </div>
-{% endblock body_content %}
+    <h1>Welcome to the kitchen!</h1>
+    <div>
+        <p>In the fridge you have...
+		{{ food.name }}
+
+	    </div>
+{% endblock %}
+	{#
+{% for food in name %}
+
+<div>
+	<p>Ingredient: {{ food.name }}</p>
+    </div>
+{% endfor %}
+	
+	</p>
+    </div>
+{% endblock %}
+
+#}
