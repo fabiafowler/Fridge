@@ -3,14 +3,15 @@
     <h1>Welcome to the kitchen!</h1>
     <div>
         <p>In the fridge you have...
-		{{ food.name }}
 
 	    </div>
 {% for food in food %}
 
 <div>
 	<p> {{ food.name }}</p>
-    </div>
+	<br> <form action="{{ url_for('fridge/(<{{ food.name }}>')}}">
+		<button type="submit">Delete this item</button>
+	</form>    </div>
 {% endfor %}
 	
 	</p>
