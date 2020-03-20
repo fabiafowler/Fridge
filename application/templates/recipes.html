@@ -1,4 +1,25 @@
 {% extends "layout.html" %}
 {% block body_content %}
-    <p1> This will show a table of recipes </p1>
-{% endblock %}
+
+
+<h1><br> Add a recipe! </h1><br><br>
+
+
+<div class="form">
+        <form method="POST" action="">
+                {{ form.hidden_tag() }}
+                {% for object in form %}
+                {{ object.label }}
+                {{ object }}
+                        {% if object.errors %}
+                                <div class='error'>
+                                        {% for error in object.errors %}
+                                                <span>{{ error }}</span>
+                                        {% endfor %}
+                                </div>
+                        {% endif %}<br>
+                {% endfor %}
+
+        </form>
+</div>
+{% endblock body_content %}

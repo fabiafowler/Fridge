@@ -11,3 +11,12 @@ class FoodForm(FlaskForm):
     )
     
     submit = SubmitField('Add to fridge!')
+
+class RecipeForm(FlaskForm):
+    recipe_name = StringField('Recipe name',
+        validators = [
+            DataRequired(),
+            Length(min=2, max=50)
+        ]
+    )
+    submit = SubmitField('Add to recipe book!')
