@@ -6,7 +6,7 @@ from application.forms import FoodForm
 @app.route('/')
 @app.route('/home')
 def home():
-    foodData = Food.query.first()
+    foodData = Food.query.all()
     return render_template('home.html', title='Home', food=foodData)
 
 @app.route('/recipes')
