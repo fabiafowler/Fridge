@@ -42,10 +42,10 @@ def fridge():
 
     return render_template('fridge.html', title='Fridge', form=form)
 
-@app.route("/fridge/<name>", methods=["GET", "POST"])
-def fridge(name):
-    name  = food.name
-    deleteme = Food.query.filter_by(name).first()
+
+@app.route('/fridge/<food_name>', methods=['GET', 'POST'])
+def delete_fridge(food_name):
+    deleteme = Food.query.filter_by(name=food_name).first()
     db.session.delete(deleteme)
     db.session.commit()
     return redirect(url_for('home'))
