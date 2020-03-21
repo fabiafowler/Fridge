@@ -25,7 +25,6 @@ def recipes():
     return render_template('recipes.html', title='Recipe', form=form)
 
 @app.route('/fridge', methods=['GET', 'POST'])
-@app.route("/fridge/<name>", methods=["GET"])
 def fridge():
     form = FoodForm()
     if form.validate_on_submit():
@@ -43,9 +42,10 @@ def fridge():
 
     return render_template('fridge.html', title='Fridge', form=form)
 
+@app.route("/fridge/<name>", methods=["GET", "POST"])
 def fridge(name):
-    name = item to delete!
-    deleteme = Food.query.filter_by(food.name).first()
+    name  = food.name
+    deleteme = Food.query.filter_by(name).first()
     db.session.delete(deleteme)
     db.session.commit()
     return redirect(url_for('home'))

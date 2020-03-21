@@ -8,10 +8,13 @@
 {% for food in food %}
 
 <div>
-	<p> {{ food.name }}</p>
-	<br> <form action="{{ url_for('fridge/(<{{ food.name }}>')}}">
-		<button type="submit">Delete this item</button>
-	</form>    </div>
+	 {{ food.name }}
+
+	 <form action="{{ url_for('fridge/{{ food.name }}') }}">
+        <button type="submit">Delete your item</button>
+</form>
+
+	</div>
 {% endfor %}
 	
 	</p>
