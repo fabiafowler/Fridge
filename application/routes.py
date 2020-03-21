@@ -1,7 +1,7 @@
 from flask import render_template, redirect, url_for
 from application import app, db
 from application.models import Food, Recipe
-from application.forms import FoodForm, RecipeForm
+from application.forms import FoodForm, RecipeForm, UpdateFoodForm
 
 @app.route('/')
 @app.route('/home')
@@ -49,3 +49,20 @@ def delete_fridge(food_name):
     db.session.delete(deleteme)
     db.session.commit()
     return redirect(url_for('home'))
+
+
+@app.route('/updatefridge/<food_name>', methods=['GET', 'POST'])
+def update_fridge(food_name):
+    form = UpdateFoodForm()
+    if form.validate_on_submit():
+        newfoodData = Food(
+            name = form.food_name.data,
+        )
+        deleteme = Food.query.filter_by(name=food_name).first()
+        db.session.delete(deleteme)
+        db.session.add(newfoodData)
+        db.session.commit()
+        return redirect(url_for('home'))
+    return render_template('updatefridge.html', title='Update Fridge', form=form)
+
+

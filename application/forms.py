@@ -23,7 +23,7 @@ class RecipeForm(FlaskForm):
 
 
 class UpdateFoodForm(FlaskForm):
-    food_name = StringField('food name',
+    food_name = StringField('input changed food name',
         validators=[
             DataRequired(),
             Length(min=3, max=20)
