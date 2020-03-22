@@ -1,0 +1,19 @@
+#!/bin/bash
+
+[Unit]
+Description= Fridge Application
+
+[Service]
+User= fridgetest
+Environment=ENVIRONMENT='development'
+ExecStart=/bin/bash \
+	-c 'cd /opt/Fridge && \
+	. ./venv/bin/activate && \
+	python3 ./app.py && \
+    python3 create.py'
+
+Environment=SECRET_KEY={{SECRET_KEY}}
+Environment=DATABASE_URI={{DATABASE_URI}}
+
+[Install]
+WantedBy=multi-user.target
