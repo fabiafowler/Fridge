@@ -51,15 +51,15 @@ I utilised pytest and started to develop integrated testing with selenium to tes
 ![CICDPipeline](Documentation/CICDPipeline.png)
 
 ### Technologies Used
-Kanban Board: Trello
-Database: GCP SQL Server
-Programming language: Python
-Unit Testing with Python (Pytest)
-Integration Testing with Python (Selenium)
-Front-end: Flask (HTML)
-Version Control: Git
-CI Server: Jenkins
-Cloud server: GCP Compute Engine
+*Kanban Board: Trello
+*Database: GCP SQL Server
+*Programming language: Python
+*Unit Testing with Python (Pytest)
+*Integration Testing with Python (Selenium)
+*Front-end: Flask (HTML)
+*Version Control: Git
+*CI Server: Jenkins
+*Cloud server: GCP Compute Engine
 
 ### What worked well
 During this project, I think I adapted well to working from home, and re-learning the materials with help from trainers. I enjoyed debugging my code when there were errors and learning through making mistakes.
