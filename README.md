@@ -23,7 +23,7 @@ I developed my app called ‘Fridge’. In this app I had 2 tables: Food and Rec
 
 The home page would allow you to see what items in the fridge, with options to add, update or delete these files provided on the app
 
-I planned using my Trello board (link here https://trello.com/b/clVv6OSR/in-my-fridge). I used the agile method to cover the MVP first, and then added more functionalities and options in later sprints.
+I planned using my Trello board [click here to view](https://trello.com/b/clVv6OSR/in-my-fridge). I used the agile method to cover the MVP first, and then added more functionalities and options in later sprints.
 
 ### Risk Assessment
 
