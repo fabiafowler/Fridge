@@ -28,6 +28,7 @@ I planned using my Trello board (link here https://trello.com/b/clVv6OSR/in-my-f
 ### Risk Assessment
 
 I created a risk assessment to map out risks, and create solutions. I took these solutions and integrated it with my project.
+
 ![riskassessmentlink](Documentation/RiskAssessment.png)
 
 ### Entity Relationship Diagrams
