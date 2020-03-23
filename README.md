@@ -40,7 +40,7 @@ My first fridge sprint was to cover the MVP. 2 very simple tables, with a table 
 My Second Sprint gave the items more details 
 
 ### Deployment
-To deploy my working app, I created a freestyle project on Jenkins. When this test was run it executed a shell which ran commands (including secret keys etc.) that deployed my app using Gunicorn.
+To deploy my working app, I created a freestyle project on Jenkins. When I built this job it executed a shell which ran commands (including secret keys etc.) that deployed my app using Gunicorn.
 ![JenkinsJob](Documentation/JenkinsJob.png)
 
 ### Testing 
