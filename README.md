@@ -27,7 +27,7 @@ I planned using my Trello board (link here https://trello.com/b/clVv6OSR/in-my-f
 
 ### Risk Assessment
 
-I created a risk assessment to map out risks, and create solutions. I took these solutions and integrated it with my project.
+I created a risk assessment to map out risks and create solutions. I took on these solutions and integrated it with my project.
 
 ![riskassessmentlink](Documentation/RiskAssessment.png)
 
@@ -41,10 +41,11 @@ My Second Sprint gave the items more details
 
 ### Deployment
 To deploy my working app, I created a freestyle project on Jenkins. When this test was run it executed a shell which ran commands (including secret keys etc.) that deployed my app using Gunicorn.
+![JenkinsJob](Documentation/JenkinsJob.png)
 
 ### Testing 
 
-I utilised pytest and started to develop integrated testing with selenium to test my website. This was an aspect I would need to add more to.
+I utilised pytest and started to develop integrated testing with selenium to test my website. Although my pytest passed, I would need to create more to make my app reliable.
 
 ### CICD Pipeline
 ![CICDPipeline](Documentation/CICDPipeline.png)
