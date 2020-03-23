@@ -19,7 +19,7 @@ The brief was to create and a CRUD functional application which was linked to a 
 
 ### Planning and Proposal
 
-I developed my app called ‘Fridge’. In this app I had 2 tables: Food and Recipes, because they had a many to many relationship, I had to create a third table; ingredients.
+I developed my app called ‘Fridge’. In this app I had 2 tables: Food and Recipes, because they had a many to many relationship, I had to create a third table called ingredients.
 
 The home page would allow you to see what items in the fridge, with options to add, update or delete these files provided on the app
 
@@ -28,10 +28,10 @@ I planned using my Trello board (link here https://trello.com/b/clVv6OSR/in-my-f
 ### Risk Assessment
 
 I created a risk assessment to map out risks, and create solutions. I took these solutions and integrated it with my project.
-[riskassessmentlink]
+![riskassessmentlink](Documentation/RiskAssessment.png)
 
 ### Entity Relationship Diagrams
-![FirstFridgeSprint](/Documentation/FirstFridgeSprint.png)
+![FirstFridgeSprint](Documentation/FirstFridgeSprint.png)
 
 My first fridge sprint was to cover the MVP. 2 very simple tables, with a table that connects them both
 
@@ -46,9 +46,9 @@ To deploy my working app, I created a freestyle project on Jenkins. When this te
 I utilised pytest and started to develop integrated testing with selenium to test my website. This was an aspect I would need to add more to.
 
 ### CICD Pipeline
-![FirstFridgeSprint](/Documentation/FirstFridgeSprint.png)
+![CICDPipeline](Documentation/CICDPipeline.png)
 
-###Technologies Used
+### Technologies Used
 Kanban Board: Trello
 Database: GCP SQL Server
 Programming language: Python
