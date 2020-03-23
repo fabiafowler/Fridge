@@ -17,9 +17,3 @@ selenium==3.141.0
 Flask-Testing==0.8.0
 pytest==5.4.1
 pytest-cov==2.8.1
-<<<<<<< HEAD
-Werkzeug==0.16.1
-pytest==5.4.1
-pytest-cov==2.8.1
-=======
->>>>>>> f56d7246523f6337bc6d064d8fbfb2144809694b
